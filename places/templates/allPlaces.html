@@ -1,1 +1,11 @@
 {% extends 'base.html' %}
+
+{%block content%}
+    <h1>Is working</h1>
+
+{% for data in object %}
+        <p>{{data.name}}</p>
+        <p>{{data.desc}}</p>
+        <p>{{data.category.Category}}</p>
+{% endfor %}
+{% endblock %}
